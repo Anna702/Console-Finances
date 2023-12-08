@@ -87,6 +87,7 @@ var finances = [
   ["Feb-2017", 671099],
 ];
 console.log("Financial Analysis");
+console.log("------------------");
 
 let totalMonths = finances.length;
 console.log("Total Months: " + totalMonths);
@@ -126,12 +127,12 @@ console.log("Total: $" + Total);
 console.log(
   "Greatest Increase in Profits/Losses: ",
   greatestIncrease.date,
-  greatestIncrease.amount
+  "($" + greatestIncrease.amount + ")"
 );
 console.log(
   "Greatest Decrease in Profits/Loses: ",
   greatestDecrease.date,
-  greatestDecrease.amount
+  "($" + greatestDecrease.amount + ")"
 );
 
 //looking for average change
@@ -140,13 +141,5 @@ for (let i = 0; i < changes.length; i++) {
   allChanges += changes[i];
 }
 // use totalMonths - 1 because we need the number of intervals between the months.
-let averageChange = allChanges / (totalMonths - 1);
+let averageChange = (allChanges / (totalMonths - 1)).toFixed(2);
 console.log("Average Change: " + averageChange);
-
-// The average of the changes in Profit/Losses over the entire period.
-
-// You will need to track what the total change in Profit/Losses are from month to month and then find the average.
-// (Total/(Number of months - 1))
-// The greatest increase in Profit/Losses (date and amount) over the entire period.
-
-// The greatest decrease in Profit/Losses (date and amount) over the entire period.
