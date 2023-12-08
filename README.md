@@ -34,7 +34,7 @@ The final code is printing the analysis to the console.
 
 ## Project Status
 
-Deployed:
+Deployed: https://anna702.github.io/Console-Finances/
 
 ## Project Screenshot
 
