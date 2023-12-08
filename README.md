@@ -1,12 +1,12 @@
 # Console-Finances
 
-This repository showcases the app created for analyzing the financial records of a company, with the financial dataset provided by client.
+This repository showcases the app created for analyzing the financial records of a company with the financial dataset provided by client.
 
 ## Description
 
 During this challenge I used the concepts I've learned since the start of Bootcamp along with some new JavaScript techniques that I studied as a result of the research.
 
-As a result I created a JavaScript code that analyzes the records to calculate each of the following:
+I created a JavaScript code that analyzes the records to calculate each of the following:
 
 - The total number of months included in the dataset.
 
