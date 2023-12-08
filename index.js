@@ -1,4 +1,4 @@
-var finances = [
+const finances = [
   ["Jan-2010", 867884],
   ["Feb-2010", 984655],
   ["Mar-2010", 322013],
@@ -86,9 +86,12 @@ var finances = [
   ["Jan-2017", 138230],
   ["Feb-2017", 671099],
 ];
+
+//just a decoration
 console.log("Financial Analysis");
 console.log("------------------");
 
+//The total number of months included in the dataset
 let totalMonths = finances.length;
 console.log("Total Months: " + totalMonths);
 
@@ -96,7 +99,7 @@ console.log("Total Months: " + totalMonths);
 let Total = 0;
 let changes = [];
 
-//Infinity and -Infinity - we initialize variables for tracking extreme values: to be sure that the first valid value will be considered both the greatest increase and the greatest decrease until we find a higher/lower value in that data.
+//Infinity and -Infinity - initialize variables for tracking extreme values: to be sure that the first valid value will be considered both the greatest increase and the greatest decrease (until we find a higher/lower value in our array data).
 let greatestIncrease = { date: "", amount: -Infinity };
 let greatestDecrease = { date: "", amount: Infinity };
 
@@ -113,8 +116,8 @@ for (let i = 0; i < finances.length; i++) {
 
     //greatestIncrease and greatestDecrease calculation
     if (change > greatestIncrease.amount) {
-      greatestIncrease.date = finances[i][0];
-      greatestIncrease.amount = change;
+      greatestIncrease.date = finances[i][0]; //refers to a date
+      greatestIncrease.amount = change; //refers to a sum
     }
 
     if (change < greatestDecrease.amount) {
